@@ -15,78 +15,100 @@
 </head>
 <body>
 
-<header>
-    <div class="header-wrap">
-        <a href="https://sprig.com/" target="_blank">
-            <img src="src/images/header-images/Frame.svg" alt="" class="header-images "></a>
-        <form action="" class="header__form">
-            <a href="https://sprig.com/why-sprig" class="header-link" target="_blank">Why Sprig?</a>
-            <label for="lang1">
-                <select name="" id="lang1" class="header-select">
-                    <option value="" selected>Product</option>
-                    <option value="">Customers</option>
-                    <option value="">Resources</option>
-                </select>
+<header id="header">
+    <div class="popup__bg">
+        <form class="popup">
+        <span class="close-popup">
+            <i class="fas fa-times"></i>
+        </span>
+            <label>
+                <input type="text" name="name" placeholder="Ваше имя">
             </label>
-
-
-            <label for="lang2">
-                <select name="" id="lang2" class="header-select">
-                    <option value="" selected>Customers</option>
-                    <option value="">Customers</option>
-                    <option value="">Resources</option>
-                </select>
+            <label>
+                <input type="tel" name="tel" placeholder="Ваш телефон">
             </label>
-
-            <label for="lang3">
-                <select name="" id="lang3" class="header-select">
-                    <option value="" selected>Resources</option>
-                    <option value="">Customers</option>
-                    <option value="">Resources</option>
-                </select>
+            <label>
+                <textarea name="message" placeholder="Ваше сообщение"></textarea>
             </label>
-            <a href="https://sprig.com/plans" class="header-link" target="_blank">Plans</a>
+            <button type="submit">Отправить</button>
         </form>
-        <div class="header-mix">
-            <a href="https://spring.io/signin" class="header-link" target="_blank">Sign In</a>
-            <a href="https://www.pillowtalk.com.au/sale/" class="header-link" target="_blank">Talk to Sales</a>
-            <button class="header-button animate__animated animate__fadeInRight"><a href="https://start.spring.io/" target="_blank" class="header-lnk">
-                <p class="header-tx">Start for Free</p></a></button>
-        </div>
     </div>
+    <section class="header1">
+        <div class="header-wrap">
+            <a href="https://sprig.com/" target="_blank">
+                <img src="src/images/header-images/Frame.svg" alt="" class="header-images "></a>
+            <form action="" class="header__form">
+                <a href="#ex1" class="header-link">Why Sprig?</a>
+                <label for="lang1">
+                    <select name="" id="lang1" class="header-select">
+                        <option value="" selected>Product</option>
+                        <option value="">Customers</option>
+                        <option value="">Resources</option>
+                    </select>
+                </label>
+
+
+                <label for="lang2">
+                    <select name="" id="lang2" class="header-select">
+                        <option value="" selected>Customers</option>
+                        <option value="">Customers</option>
+                        <option value="">Resources</option>
+                    </select>
+                </label>
+
+                <label for="lang3">
+                    <select name="" id="lang3" class="header-select">
+                        <option value="" selected>Resources</option>
+                        <option value="">Customers</option>
+                        <option value="">Resources</option>
+                    </select>
+                </label>
+                <a href="#ex2" class="header-link">Plans</a>
+            </form>
+            <div class="header-mix">
+                <a href="#ex3" class="header-link">Sign In</a>
+                <a href="#ex4" class="header-link">Talk to Sales</a>
+                <button class="open-popup header-button">Start for Free</button>
+            </div>
+        </div>
+    </section>
 </header>
 
 <main>
-    <div class="main-block">
-        <div class="col-6">
-            <div class="main-blocks">
-                <h1 class="user-title animate__animated animate__fadeInLeft">In-context user research that's fast and
-                    reliable.</h1>
-                <p class="user-text">Ensure user research happens early and often with Sprig's targeted microsurveys,
-                    video questions, and more.</p>
-                <a href="https://spring.io/signin">
-                    <button class="user-button1 animate__animated animate__fadeInLeft">Start for Free</button>
-                </a>
-                <a href="https://start.spring.io/">
-                    <button class="user-button2 animate__animated animate__fadeInLeft">Talk to Sales</button>
-                </a>
-
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="main-blocks">
-                <div class="user-back">
-                    <a data-fancybox href="https://www.youtube.com/watch?v=iWY0nlKHq68">
-                        <img src="src/images/main-images/user/IMAGE%20(1).svg" alt=""
-                             class="user-images animate__animated animate__fadeInRight">
+    <section id="ex1">
+        <div class="main-block">
+            <div class="col-6">
+                <div class="main-blocks">
+                    <h1 class="user-title animate__animated animate__fadeInLeft">In-context user research that's fast
+                        and
+                        reliable.</h1>
+                    <p class="user-text">Ensure user research happens early and often with Sprig's targeted
+                        microsurveys,
+                        video questions, and more.</p>
+                    <a href="https://spring.io/signin">
+                        <button class="user-button1 animate__animated animate__fadeInLeft">Start for Free</button>
                     </a>
+                    <a href="https://start.spring.io/">
+                        <button class="user-button2 animate__animated animate__fadeInLeft">Talk to Sales</button>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="main-blocks">
+                    <div class="user-back">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=iWY0nlKHq68">
+                            <img src="src/images/main-images/user/IMAGE%20(1).svg" alt=""
+                                 class="user-images animate__animated animate__fadeInRight">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-    </div>
-    <div class="trusted">
+    </section>
+    <section class="trusted">
         <h2 class="trusted-title">Trusted by the world's most innovative companies</h2>
         <div class="carousel owl-carousel">
             <img src="src/images/main-images/trusted-images/IMAGE%20(1).png" alt="">
@@ -111,43 +133,45 @@
             <img src="src/images/main-images/trusted-images/IMAGE%20(16).png" alt="">
         </div>
 
-    </div>
-    <div class="modern animate__zoomIn">
-        <div class="row">
-            <div class="modern-wrap">
-                <div class="col-6">
-                    <div class="modern-block1">
-                        <img src="src/images/main-images/modern-images/Frame%20(2).svg" alt="" width="600px">
+    </section>
+    <section id="ex2">
+        <div class="modern">
+            <div class="row">
+                <div class="modern-wrap">
+                    <div class="col-6">
+                        <div class="modern-block1">
+                            <img src="src/images/main-images/modern-images/Frame%20(2).svg" alt="" width="600px">
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="modern-block">
-                        <h3 class="modern-title">Modern product teams move fast, but learning from customers takes
-                            a ton
-                            of time, effort, and energy.</h3>
-                        <p class="modern-text">So teams often rush user research or skip it altogether, causing
-                            products and features to miss the mark.</p>
+                    <div class="col-6">
+                        <div class="modern-block">
+                            <h3 class="modern-title">Modern product teams move fast, but learning from customers takes
+                                a ton
+                                of time, effort, and energy.</h3>
+                            <p class="modern-text">So teams often rush user research or skip it altogether, causing
+                                products and features to miss the mark.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="analytics">
+    </section>
+    <section class="analytics">
         <h2 class="analytics-title">Sprig makes it possible to obtain qualitative insights at the speed and scale of
             analytics</h2>
         <img src="src/images/main-images/analytics/IMAGE%20(17).png" alt="" class="analytics-img">
         <button class="analytics-button">Start for Free</button>
 
-    </div>
-    <div class="target">
+    </section>
+    <section class="target">
         <div class="target-wrap">
             <h2 class="target-title">Target your actual users during key moments throughout their product journey.</h2>
             <p class="target-text">Get 30% higher response rates by asking your customers hyper-relevant questions based
                 on who they are and what they'll do within your product.</p>
         </div>
-    </div>
+    </section>
     <img src="src/images/main-images/target/IMAGE%20(2).svg" alt="" class="target-images" width="520px">
-    <div class="informed">
+    <section class="informed">
         <div class="over-informed">
             <p class="over-text">SOLUTIONS</p>
             <h2 class="over-title">How Sprig helps ensure every product decision is customer-informed</h2>
@@ -206,8 +230,8 @@
         </div>
 
 
-    </div>
-    <div class="accordion-body">
+    </section>
+    <section class="accordion-body">
         <div class="accordion">
             <div class="container">
                 <div class="row">
@@ -267,8 +291,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="share">
+    </section>
+    <section class="share">
         <div class="share-wrap">
             <div class="share-bl1">
                 <div class="share-block">
@@ -287,8 +311,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="case">
+    </section>
+    <section id="ex3">
         <div class="case-wrap">
             <div class="case-block1">
                 <p class="over-case">CASE STUDY</p>
@@ -312,22 +336,24 @@
             </div>
         </div>
 
-    </div>
-    <div class="launch">
-        <div class="launch-wrap">
-            <h2 class="launch-title-1">Launch a Sprig within minutes.</h2>
-            <h2 class="launch-title-2">See insights within hours.</h2>
-            <p class="launch-text">Create your free account to conduct video interviews, test designs, and survey
-                specific users within your product, on your website, and more.</p>
-            <button class="launch-btn">Start for Free</button>
+    </section>
+    <section id="ex4">
+        <div class="launch">
+            <div class="launch-wrap">
+                <h2 class="launch-title-1">Launch a Sprig within minutes.</h2>
+                <h2 class="launch-title-2">See insights within hours.</h2>
+                <p class="launch-text">Create your free account to conduct video interviews, test designs, and survey
+                    specific users within your product, on your website, and more.</p>
+                <button class="launch-btn">Start for Free</button>
+            </div>
+
+            <hr class="launch-hr">
         </div>
-        <hr class="launch-hr">
-    </div>
+    </section>
 </main>
 
-
 <footer>
-    <div class="product">
+    <section class="product">
         <img src="src/images/main-images/product-img/Vector%20(4).png" alt="" class="product-img">
         <div class="product-wrap">
             <div class="container">
@@ -396,15 +422,18 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </footer>
-<audio controls autoplay>
-    <source src="https://muzbear.net/files/mp3/11/bidlo-zachem-ona-beret.mp3" type="audio/mpeg; codecs=vorbis">
-    <source src="https://muzbear.net/files/mp3/11/bidlo-zachem-ona-beret.mp3" type="audio/mpeg">
-    Тег audio не поддерживается вашим браузером.
-    <a href="https://muzbear.net/files/mp3/11/bidlo-zachem-ona-beret.mp3">Скачайте музыку</a>.
-</audio>
+<!--<audio controls autoplay>-->
+<!--    <source src="https://muzbear.net/files/mp3/11/bidlo-zachem-ona-beret.mp3" type="audio/mpeg; codecs=vorbis">-->
+<!--    <source src="https://muzbear.net/files/mp3/11/bidlo-zachem-ona-beret.mp3" type="audio/mpeg">-->
+<!--    Тег audio не поддерживается вашим браузером.-->
+<!--    <a href="https://muzbear.net/files/mp3/11/bidlo-zachem-ona-beret.mp3">Скачайте музыку</a>.-->
+<!--</audio>-->
+
 <script src="src/libs/jguery/jguery.js"></script>
+<script src="//code-sb1.jivosite.com/widget/qxci4Kd8te" async></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://kit.fontawesome.com/b8bec136bd.js" crossorigin="anonymous"></script>
 <script src="src/libs/owlCarousel/owl.carousel.min.js"></script>
 <script src="src/libs/fancybox/jquery.fancybox.min.js"></script>
